@@ -1,4 +1,4 @@
-# Flutter news app with categories selector
+# Flutter News App with Categories Selector
 
 A new Flutter application.
 
