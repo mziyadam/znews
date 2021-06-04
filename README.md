@@ -1,6 +1,6 @@
 # Znews
 
-A new Flutter application.
+For the tutorial you can see at https://mziyad195.medium.com/flutter-news-app-with-categories-selector-e153f8cb5591 .
 
 ## Getting Started
 
