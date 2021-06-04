@@ -1,4 +1,4 @@
-# Flutter News App with Categories Selector
+# Znews
 
 A new Flutter application.
 
