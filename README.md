@@ -32,4 +32,6 @@ Applications for reading news.
 2. Install the APK
 
 # Built With
-- [Flutter](https://kotlinlang.org/) - First class and official programming language for Android development.
+- [Flutter](https://flutter.dev/docs) - An open source framework by Google for building beautiful, natively compiled, multi-platform applications from a single codebase.
+- [WebView](https://pub.dev/packages/webview_flutter) - A Flutter plugin that provides a WebView widget.
+- [HTTP](https://pub.dev/packages/http) - A composable, Future-based library for making HTTP requests.
