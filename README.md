@@ -2,13 +2,7 @@
 Znews : Flutter News App with Categories Selector
 
 For the tutorial you can see at https://mziyad195.medium.com/flutter-news-app-with-categories-selector-e153f8cb5591 .
-<br />
-<p align="center">
-  <a href="#">
-    <img src="app/src/main/res/drawable/logo.png">
-  </a>
-</p>
-<br>
+
 
 # About The Project
 Applications for reading news.
