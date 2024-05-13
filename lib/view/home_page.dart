@@ -7,7 +7,7 @@ import 'loading.dart';
 class Homepage extends StatefulWidget {
   final String kat;
 
-  Homepage({this.kat});
+  Homepage({required this.kat});
 
   @override
   _Homepage createState() => _Homepage();
@@ -37,8 +37,8 @@ class _Homepage extends State<Homepage> {
 
             return ListView.builder(
               itemBuilder: (context, index) =>
-                  CustomListTile(articles[index], context),
-              itemCount: articles.length,
+                  CustomListTile(articles![index], context),
+              itemCount: articles?.length,
             );
           }
           return Center(

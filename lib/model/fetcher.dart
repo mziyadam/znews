@@ -5,13 +5,11 @@ import 'article.dart';
 class Fetch {
   var firsturl = 'newsapi.org';
   var client = http.Client();
-  String category;
-  Fetch() {
-    category = 'technology';
-  }
-  Fetch.withCategory(String kat) {
-    category = kat;
-  }
+  String category='technology';
+
+
+  Fetch.withCategory(this.category);
+
 
   Future<List<Article>> getArtikel() async {
     var queryParameters = {

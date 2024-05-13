@@ -73,7 +73,7 @@ class _menuState extends State<menu> {
                       });
                     },
                     style: ElevatedButton.styleFrom(
-                        primary: Colors.lightBlueAccent),
+                        backgroundColor: Colors.lightBlueAccent),
                     child: Text('Save'),
                   ),
                 ],

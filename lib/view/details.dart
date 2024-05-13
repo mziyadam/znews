@@ -5,7 +5,7 @@ import '../model/article.dart';
 class Details extends StatefulWidget {
   final Article article;
 
-  Details({this.article});
+  Details({required this.article});
 
   @override
   _DetailsState createState() => _DetailsState();
@@ -25,11 +25,15 @@ class _DetailsState extends State<Details> {
               Navigator.pop(context);
             },
           ),
-          title: Text(widget.article.title),
+          title: Text(widget.article.title.toString()),
         ),
-        body: WebView(
-          initialUrl: widget.article.url,
-          javascriptMode: JavascriptMode.unrestricted,
-        ));
+        body:
+        Text('tes')
+        // WebView(
+        //   initialUrl: widget.article.url,
+        //   javascriptMode: JavascriptMode.unrestricted,
+        // )
+
+    );
   }
 }
