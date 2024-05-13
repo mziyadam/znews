@@ -19,15 +19,15 @@ class _Homepage extends State<Homepage> {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-          leading: IconButton(
-            icon: Icon(
-              Icons.arrow_back,
-              color: Colors.white,
-            ),
-            onPressed: () {
-              Navigator.pop(context);
-            },
-          ),
+          // leading: IconButton(
+          //   icon: Icon(
+          //     Icons.arrow_back,
+          //     color: Colors.white,
+          //   ),
+          //   onPressed: () {
+          //     Navigator.pop(context);
+          //   },
+          // ),
           title: Text(widget.kat)),
       body: FutureBuilder(
         future: Fetch.withCategory(widget.kat).getArtikel(),

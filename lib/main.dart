@@ -12,7 +12,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Znews',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        // primarySwatch: Colors.green,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         fontFamily: 'Poppins',
       ),
       home: menu(),
