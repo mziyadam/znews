@@ -5,7 +5,7 @@ import 'article.dart';
 class Fetch {
   var firsturl = 'newsapi.org';
   var client = http.Client();
-  String category;
+  String category="";
   Fetch() {
     category = 'technology';
   }
@@ -23,7 +23,24 @@ class Fetch {
     var response = await client.get(uri);
     Map<String, dynamic> json = jsonDecode(response.body);
     List<dynamic> body = json['articles'];
-    var articles = body.map((dynamic item) => Article.fromJson(item)).toList();
+  List<Article> articles=[];
+
+    print(body[4]);
+    print(body[5]);
+  try {
+    for (int i = 0; i < articles.length; i++) {
+      print(body[i]);
+      var article = Article.fromJson(body[i]);
+      articles.add(article);
+      print(article);
+    }
+  }catch(e){
+    print(e);
+  }
+    // var articles = body.map((item) {
+    //   // var article=Article.fromJson(item);
+    //   print(item);
+    // });
     return articles;
   }
 }

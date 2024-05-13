@@ -7,7 +7,7 @@ import 'loading.dart';
 class Homepage extends StatefulWidget {
   final String kat;
 
-  Homepage({this.kat});
+  Homepage({required this.kat});
 
   @override
   _Homepage createState() => _Homepage();
@@ -32,15 +32,16 @@ class _Homepage extends State<Homepage> {
       body: FutureBuilder(
         future: Fetch.withCategory(widget.kat).getArtikel(),
         builder: (BuildContext context, AsyncSnapshot<List<Article>> snapshot) {
-          if (snapshot.hasData) {
+          print(snapshot.data==null);
+          if (snapshot.data!=null) {
             var articles = snapshot.data;
 
             return ListView.builder(
               itemBuilder: (context, index) =>
-                  CustomListTile(articles[index], context),
-              itemCount: articles.length,
+                  CustomListTile(articles![index], context),
+              itemCount: articles?.length,
             );
-          }
+          }else
           return Center(
             child: loading(),
           );

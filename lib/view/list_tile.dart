@@ -43,7 +43,7 @@ Widget CustomListTile(Article article, BuildContext context) {
                       width: double.infinity,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: NetworkImage(article.urlToImage),
+                            image: NetworkImage(article.urlToImage.toString()),
                             fit: BoxFit.cover),
                       ),
                     ),
@@ -55,7 +55,7 @@ Widget CustomListTile(Article article, BuildContext context) {
                   borderRadius: BorderRadius.circular(1.0),
                 ),
                 child: Text(
-                  article.source.name,
+                  article.source!.name.toString(),
                   style: TextStyle(
                     color: Colors.white,
                   ),
@@ -63,7 +63,7 @@ Widget CustomListTile(Article article, BuildContext context) {
               ),
               SizedBox(height: 8.0),
               Text(
-                article.title,
+                article.title.toString(),
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 16.0,
@@ -116,7 +116,7 @@ Widget CustomListTile(Article article, BuildContext context) {
                         width: double.infinity,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                              image: NetworkImage(article.urlToImage),
+                              image: NetworkImage(article.urlToImage.toString()),
                               fit: BoxFit.cover),
                         ),
                       ),
@@ -130,7 +130,7 @@ Widget CustomListTile(Article article, BuildContext context) {
                       child: Padding(
                         padding: const EdgeInsets.all(12.0),
                         child: Text(
-                          article.title,
+                          article.title.toString(),
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16.0,
@@ -149,7 +149,7 @@ Widget CustomListTile(Article article, BuildContext context) {
                           borderRadius: BorderRadius.circular(1.0),
                         ),
                         child: Text(
-                          article.source.name,
+                          article.source!.name.toString(),
                           style: TextStyle(
                             color: Colors.white,
                           ),
@@ -205,7 +205,7 @@ Widget CustomListTile(Article article, BuildContext context) {
                         height: 200.0,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                              image: NetworkImage(article.urlToImage),
+                              image: NetworkImage(article.urlToImage.toString()),
                               fit: BoxFit.cover),
                         ),
                       ),
@@ -219,7 +219,7 @@ Widget CustomListTile(Article article, BuildContext context) {
                       child: Container(
                         alignment: Alignment.topLeft,
                         child: Text(
-                          article.title,
+                          article.title.toString(),
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16.0,
@@ -238,7 +238,7 @@ Widget CustomListTile(Article article, BuildContext context) {
                           borderRadius: BorderRadius.circular(1.0),
                         ),
                         child: Text(
-                          article.source.name,
+                          article.source!.name.toString(),
                           style: TextStyle(
                             color: Colors.white,
                           ),
